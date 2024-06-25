@@ -1,0 +1,509 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zamestnanecký portál</title>
+	
+	<!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+	<!-- bootstrap icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	
+	<!-- https://fontawesome.com/ icon -->
+	<script src="https://kit.fontawesome.com/881c9fe725.js" crossorigin="anonymous"></script>
+	
+	<!-- animate css -->
+	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+	<!-- tablesorter -->
+	<link href="styles/tablesorter/theme.default.min.css" rel="stylesheet">
+	<link href="styles/tablesorter/theme.blue.min.css" rel="stylesheet">
+	<link href="styles/tablesorter/theme.ice.min.css" rel="stylesheet">
+	
+	<!-- cute alert -->
+	<link rel="stylesheet" href="styles/cuteAlert/style.css">
+	
+	<!-- custom css -->
+	<link rel="stylesheet" href="styles/customStyles.css">
+	
+</head>
+  <body>
+
+	<div id="menu">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		  <div class="container">
+			<a class="navbar-brand" href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/index.html#">
+			  <img src="img/logo.png">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0" role="tablist">
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/index.html#"><button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Domov</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/pracovnePostupy/pracovnePostupy.html" ><button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Postupy</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/o%20n%C3%A1s/oNas.html"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">O&nbsp;nás</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/vykonnost/vykonnost.html#"><button class="nav-link active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Výkonnosť</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/galeria/galeria.html"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Galéria</button></a>
+				  </li>
+				</ul>
+			  <div id="calculator" style="cursor: pointer; color: cornflowerblue; padding-right: 90px;" onclick="calculator();">
+				<i class="bi bi-calculator" style="font-size: 40px; loat: left;"></i>
+				<div id="calculatorIcon" style="float: right; font-size: 12px; font-weight: bold; margin-top: 12px;">VYPOČÍTAJ<br>PROVÍZIU</div>
+			  </div>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	
+	<div id="performance" class="container">
+		<div id="performanceBeforeClickonDetail">
+			<div id="branchesPerformance" class="row">
+				<a href="#" class="branchesPerformanceItem col-md-4" id="branchesPerformanceItemPuchovButton">
+					<div class="row">
+						<i class="bi bi-1-square col-md-3"></i>
+						<div class="branchesPerformanceItemInner col-md-9">
+							<div class="row">
+								<div class="col-md-5 branchesPerformanceItemInnerleft"><img src="img/erby/puchovMini.jpg"></div>
+								<div class="col-md-7 branchesPerformanceItemInnerRight">
+									<div class="branchesPerformanceItemInnerRightTop">Púchov</div>
+									<div class="branchesPerformanceItemInnerRightBottom">
+										<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+										  <div class="progress-bar bg-info text-dark" style="width: 82%">82%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="branchesPerformanceItem col-md-4" id="branchesPerformanceItemSenecButton">
+					<div class="row">
+						<i class="bi bi-2-square col-md-3"></i>
+						<div class="branchesPerformanceItemInner col-md-9">
+							<div class="row">
+								<div class="col-md-5 branchesPerformanceItemInnerleft"><img src="img/erby/senecMini.jpg"></div>
+								<div class="col-md-7 branchesPerformanceItemInnerRight">
+									<div class="branchesPerformanceItemInnerRightTop">Senec</div>
+									<div class="branchesPerformanceItemInnerRightBottom">
+										<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+										  <div class="progress-bar bg-info text-dark" style="width: 69%">69%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>
+				<a href="#" class="branchesPerformanceItem col-md-4" id="branchesPerformanceItemTrencinButton">
+					<div class="row">
+						<i class="bi bi-3-square col-md-3"></i>
+						<div class="branchesPerformanceItemInner col-md-9">
+							<div class="row">
+								<div class="col-md-5 branchesPerformanceItemInnerleft"><img src="img/erby/trencinMini.jpg"></div>
+								<div class="col-md-7 branchesPerformanceItemInnerRight">
+									<div class="branchesPerformanceItemInnerRightTop">Trenčín</div>
+									<div class="branchesPerformanceItemInnerRightBottom">
+										<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+										  <div class="progress-bar bg-info text-dark" style="width: 51%">51%</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</a>	
+			</div>
+			<div id="employeesPerformance">
+				<div class="row">
+					<div class="col-md-10" id="employeesPerformanceLeft">
+						<div class="progress employeesPerformanceItem" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
+						  <div class="progress-bar bg-success" style="width: 89%"><a href="#">Alojz Kalneráb<div class="eployeesPercents">89%</div></a></div>
+						</div>
+						<div class="progress employeesPerformanceItem" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
+						  <div class="progress-bar bg-success" style="width: 81%"><a href="#">Ignác Bajza<div class="eployeesPercents">81%</div></a></div>
+						</div>
+						<div class="progress employeesPerformanceItem" role="progressbar" aria-label="Success example" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
+						  <div class="progress-bar bg-success" style="width: 77%"><a href="#">Adam Peter<div class="eployeesPercents">77%</div></a></div>
+						</div>
+						<div class="progress employeesPerformanceItem" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
+						  <div class="progress-bar bg-info" style="width: 76%"><a href="#">Ján Diňa<div class="eployeesPercents">76%</div></a></div>
+						</div>
+						<div class="progress employeesPerformanceItem" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
+						  <div class="progress-bar bg-info" style="width: 72%"><a href="#">Ježek Sonic<div class="eployeesPercents">72%</div></a></div>
+						</div>
+						<div class="progress employeesPerformanceItem" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
+						  <div class="progress-bar bg-info" style="width: 67%"><a href="#">Elena Fialová<div class="eployeesPercents">67%</div></a></div>
+						</div>
+						<div class="progress employeesPerformanceItem" role="progressbar" aria-label="Warning example" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
+						  <div class="progress-bar bg-warning" style="width: 49%"><a href="#">Matej Bel<div class="eployeesPercents">49%</div></a></div>
+						</div>
+						<div class="progress employeesPerformanceItem" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
+						  <div class="progress-bar bg-danger" style="width: 48%"><a href="#">Etela Zelerová<div class="eployeesPercents">48%</div></a></div>
+						</div>
+						<div class="progress employeesPerformanceItem" role="progressbar" aria-label="Danger example" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="height: 30px">
+						  <div class="progress-bar bg-danger" style="width: 42%"><a href="#">Ezechiel Moskvič<div class="eployeesPercents">42%</div></a></div>
+						</div>
+					</div>
+					<div class="col-md-2" id="employeesPerformanceRight">
+						<i class="bi bi-bullseye" style="font-size: 40px; color: #1e57ad;"></i>&nbsp;&nbsp;&nbsp;<strong>CIELE</strong>
+						<br>
+						<br>
+						<i class="bi bi-building" style="font-size: 25px; color: ; float: left;"></i><h2 class="targetName">Pobočka</h2>
+						<p>Cieľ ks = 30 predajov</p>
+						<p>Cieľ objem = 3 mil. EUR</p>
+						<i class="bi bi-arrow-right-square" style="font-size: 18px; color: cornflowerblue; float: left;">&nbsp;&nbsp;</i><div>100% plnenie</div>
+											<br>
+						<i class="bi bi-person" style="font-size: 25px; color: cornflowerblue; float: left;"></i><h2 class="targetName">Predajca</h2>
+						<p>Cieľ ks = 10 predajov</p>
+						<p>Cieľ objem = 1 mil. EUR</p>
+						<i class="bi bi-arrow-right-square" style="font-size: 18px; color: cornflowerblue; float: left;">&nbsp;&nbsp;</i><div>100% plnenie</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div id="performanceAfterClickonDetail">
+		
+			<div id="performanceDetailPuchov">
+				<div id="performanceDetailPuchovBranch" class="performanceDetailBranches">
+					<button type="button" class="btn btn-secondary btn-lg buttonTurnBack" id="buttonTurnBackPuchov">Vrátiť späť</button><h2 class="performanceAfterClickonDetailSectionName"><img src="img/erby/puchovMini.jpg">&nbsp;Výkonnosť pobočka PÚCHOV</h2>
+					<div id="performancePcsPuchov">
+						<div class="row">
+							<div class="col-md-10">
+								<h4>Plnenie cieľa v ks</h4>
+								<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+									<div class="progress-bar bg-info" style="width: 82%; float: left;">27ks</div>
+								</div>
+								<br>
+								<h4>Plnenie cieľa v ks podľa výkonnosti zamestnanca</h4>
+								<div class="progress-stacked">
+								  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100" style="width: 41%;">
+									<div class="progress-bar">Alojz Kalneráb&nbsp;11ks</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width: 21%;">
+									<div class="progress-bar bg-success">Ján Diňa&nbsp;9ks</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%;">
+									<div class="progress-bar bg-warning">Ježek Sonic&nbsp;8ks</div>
+								  </div>
+								</div>
+								<br>
+								<h4>Plnenie cieľa objem</h4>
+								<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+									<div class="progress-bar bg-info" style="width: 72%">2,5 mil</div>
+								</div>
+								<br>
+								<h4>Plnenie cieľa objem podľa zamestnanca</h4>
+								<div class="progress-stacked">
+								  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100" style="width: 27%;">
+									<div class="progress-bar">Alojz Kalneráb&nbsp;0,9 mil</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">
+									<div class="progress-bar bg-success">Ján Diňa&nbsp;1,2 mil</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+									<div class="progress-bar bg-warning">Ježek Sonic&nbsp;0,4 mil</div>
+								  </div>
+								</div>
+							</div>	
+							<div class="col-md-2 performancePcsRight">
+								<h5 style="color: cornflowerblue;">Ciele plnenie 100%</h5>
+								<div style="font-weight: bold;">
+									30ks
+									<br>
+									<br>
+									<br>
+									<div style="padding-top: 9px;">10ks /<i class="bi bi-person-fill"></i></div>
+									<br>
+									<br>
+									<div style="padding-top: 6px;">30 mil</div>
+									<br>
+									<br>
+									<div style="padding-top: 6px;">1 mil /<i class="bi bi-person-fill"></i></div>								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div id="performanceDetailPuchovEmployees">
+					<table class="tablesorter">
+					  <thead>
+						<tr>
+						  <th>#</th>
+						  <th>Meno</th>
+						  <th>Predaj domy ks</th>
+						  <th>redaj byty ks</th>
+						  <th>plenenie cieľa ks</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>1</td>
+						  <td>Alojz Kalneráb</td>
+						  <td>5</td>
+						  <td>6</td>
+						  <td>89%</td>
+						</tr>
+						<tr>
+						  <td>2</td>
+						  <td>Ján Diňa</td>
+						  <td>7</td>
+						  <td>2</td>
+						  <td>76%</td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td>Ježek Sonic</td>
+						  <td>3</td>
+						  <td>5</td>
+						  <td>72%</td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+
+			<div id="performanceDetailSenec">
+				<div id="performanceDetailSenecBranch">
+					<button type="button" class="btn btn-secondary btn-lg buttonTurnBack" id="buttonTurnBackSenec">Vrátiť späť</button><h2 class="performanceAfterClickonDetailSectionName"><img src="img/erby/senecMini.jpg">&nbsp;Výkonnosť pobočka SENEC</h2>
+					<div id="performancePcsSenec">
+						<div class="row">
+							<div class="col-md-10">
+								<h4>Plnenie cieľa v ks</h4>
+								<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+									<div class="progress-bar bg-info" style="width: 66%; float: left;">14ks</div>
+								</div>
+								<br>
+								<h4>Plnenie cieľa v ks podľa výkonnosti zamestnanca</h4>
+								<div class="progress-stacked">
+								  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100" style="width: 35%;">
+									<div class="progress-bar">Ignác Bajza&nbsp;9ks</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width: 16%;">
+									<div class="progress-bar bg-success">Etela Zelerová&nbsp;2ks</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 15%;">
+									<div class="progress-bar bg-warning">Matej Bel&nbsp;3ks</div>
+								  </div>
+								</div>
+								<br>
+								<h4>Plnenie cieľa objem</h4>
+								<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+									<div class="progress-bar bg-info" style="width: 79%">2,7 mil</div>
+								</div>
+								<br>
+								<h4>Plnenie cieľa objem podľa zamestnanca</h4>
+								<div class="progress-stacked">
+								  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100" style="width: 30%;">
+									<div class="progress-bar">Ignác Bajza&nbsp;1 mil</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width: 25%;">
+									<div class="progress-bar bg-success">Etela Zelerová&nbsp;0,8 mil</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 24%;">
+									<div class="progress-bar bg-warning">Matej Bel&nbsp;0,9 mil</div>
+								  </div>
+								</div>
+							</div>	
+							<div class="col-md-2 performancePcsRight">
+								<h5 style="color: cornflowerblue;">Ciele plnenie 100%</h5>
+								<div style="font-weight: bold;">
+									30ks
+									<br>
+									<br>
+									<br>
+									<div style="padding-top: 9px;">10ks /<i class="bi bi-person-fill"></i></div>
+									<br>
+									<br>
+									<div style="padding-top: 6px;">30 mil</div>
+									<br>
+									<br>
+									<div style="padding-top: 6px;">1 mil /<i class="bi bi-person-fill"></i></div>								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div id="performanceDetailSenecEmployees">
+
+					<table class="tablesorter">
+					  <thead>
+						<tr>
+						  <th>#</th>
+						  <th>Meno</th>
+						  <th>Predaj domy ks</th>
+						  <th>redaj byty ks</th>
+						  <th>plenenie cieľa ks</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>1</td>
+						  <td>Ignác Bajza</td>
+						  <td>5</td>
+						  <td>4</td>
+						  <td>81%</td>
+						</tr>
+						<tr>
+						  <td>2</td>
+						  <td>Etela Zelerová</td>
+						  <td>2</td>
+						  <td>0</td>
+						  <td>48%</td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td>Matej Bel</td>
+						  <td>2</td>
+						  <td>1</td>
+						  <td>49%</td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+
+			<div id="performanceDetailTrencin">
+				<div id="performanceDetailTrencinBranch">
+					<button type="button" class="btn btn-secondary btn-lg buttonTurnBack" id="buttonTurnBackTrencin">Vrátiť späť</button><h2 class="performanceAfterClickonDetailSectionName"><img src="img/erby/trencinMini.jpg">&nbsp;Výkonnosť pobočka TRENČÍN</h2>
+					<div id="performancePcsTrencin">
+						<div class="row">
+							<div class="col-md-10">
+								<h4>Plnenie cieľa v ks</h4>
+								<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+									<div class="progress-bar bg-info" style="width: 51%; float: left;">11ks</div>
+								</div>
+								<br>
+								<h4>Plnenie cieľa v ks podľa výkonnosti zamestnanca</h4>
+								<div class="progress-stacked">
+								  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100" style="width: 12%;">
+									<div class="progress-bar">Elena Fialová&nbsp;2ks</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width: 12%;">
+									<div class="progress-bar bg-success">Ezechiel Moskvič&nbsp;2ks</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 27%;">
+									<div class="progress-bar bg-warning">Adam Peter&nbsp;7ks</div>
+								  </div>
+								</div>
+								<br>
+								<h4>Plnenie cieľa objem</h4>
+								<div class="progress" role="progressbar" aria-label="Info example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="height: 20px">
+									<div class="progress-bar bg-info" style="width: 56%">1,6 mil</div>
+								</div>
+								<br>
+								<h4>Plnenie cieľa objem podľa zamestnanca</h4>
+								<div class="progress-stacked">
+								  <div class="progress" role="progressbar" aria-label="Segment one" aria-valuenow="41" aria-valuemin="0" aria-valuemax="100" style="width: 18%;">
+									<div class="progress-bar">Elena Fialová&nbsp;0,6 mil</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment two" aria-valuenow="21" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+									<div class="progress-bar bg-success">Ezechiel Moskvič&nbsp;0,2 mil</div>
+								  </div>
+								  <div class="progress" role="progressbar" aria-label="Segment three" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 28%;">
+									<div class="progress-bar bg-warning">Adam Peter&nbsp;0,8 mil</div>
+								  </div>
+								</div>
+							</div>	
+							<div class="col-md-2 performancePcsRight">
+								<h5 style="color: cornflowerblue;">Ciele plnenie 100%</h5>
+								<div style="font-weight: bold;">
+									30ks
+									<br>
+									<br>
+									<br>
+									<div style="padding-top: 9px;">10ks /<i class="bi bi-person-fill"></i></div>
+									<br>
+									<br>
+									<div style="padding-top: 6px;">30 mil</div>
+									<br>
+									<br>
+									<div style="padding-top: 6px;">1 mil /<i class="bi bi-person-fill"></i></div>								
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<br>
+				<br>
+				<div id="performanceDetailPuchovEmployees">
+					<table class="tablesorter">
+					  <thead>
+						<tr>
+						  <th>#</th>
+						  <th>Meno</th>
+						  <th>Predaj domy ks</th>
+						  <th>redaj byty ks</th>
+						  <th>plenenie cieľa ks</th>
+						</tr>
+					  </thead>
+					  <tbody>
+						<tr>
+						  <td>1</td>
+						  <td>Elena Fialová</td>
+						  <td>0</td>
+						  <td>2</td>
+						  <td>48%</td>
+						</tr>
+						<tr>
+						  <td>2</td>
+						  <td>Ezechiel Moskvič</td>
+						  <td>1</td>
+						  <td>1</td>
+						  <td>42%</td>
+						</tr>
+						<tr>
+						  <td>3</td>
+						  <td>Adam Peter</td>
+						  <td>3</td>
+						  <td>4</td>
+						  <td>77%</td>
+						</tr>
+					  </tbody>
+					</table>
+				</div>
+			</div>
+			
+		</div>
+	</div>
+	
+	<!-- farba loga
+	#1e57ad
+	modrá: #3399ff
+	silnejšia modrá: #176782
+	-->
+	
+	<!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  	
+	<!-- jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+	
+	<!-- tablesorter -->
+	<script src="js/tablesorter/jquery.tablesorter.min.js"></script>
+	<script src="js/tablesorter/jquery.tablesorter.widgets.min.js"></script>
+	
+	<!-- cute Alert -->
+	<script src="js/cuteAlert/cute-alert.js"></script>
+	
+	<!-- custom js -->
+	<script src="js/custom/customJs.js"></script>
+	
+  </body>
+</html>

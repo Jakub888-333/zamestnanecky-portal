@@ -1,0 +1,60 @@
+
+
+/*MENU*/
+
+.nav-item{
+	--bs-navbar-nav-link-padding-x: 50px;
+}
+
+#menu{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+#menu a{
+	text-decoration: none;
+}
+
+
+
+#abotUs{
+
+	background-image: linear-gradient(to right, #176782,  #cce6ff, #176782,  #cce6ff);
+}
+
+#aboutUsText{
+	width: 70%;
+	text-align: center;
+	margin: auto;
+	color: white;
+	height: 100px;
+	padding-top: 30px;
+}
+
+@media(max-width: 837px){
+	#aboutUsUpperBanner{
+		margin-bottom: 150px;
+	}
+}
+
+@media(max-width: 518px){
+	#aboutUsUpperBanner{
+		margin-bottom: 190px;
+	}
+}
+
+@media(max-width: 446px){
+	#aboutUsUpperBanner{
+		margin-bottom: 290px;
+	}
+}
+
+@media(max-width: 353px){
+	#aboutUsUpperBanner{
+		margin-bottom: 370px;
+	}
+}
+
+

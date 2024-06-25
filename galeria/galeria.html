@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zamestnanecký portál</title>
+	
+	<!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+	<!-- bootstrap icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	
+	<!-- https://fontawesome.com/ icon -->
+	<script src="https://kit.fontawesome.com/881c9fe725.js" crossorigin="anonymous"></script>
+	
+	<!-- lightgallery -->
+	<link type="text/css" rel="stylesheet" href="css/lightgallery.css" />
+    <!-- lightgallery plugins -->
+    <link type="text/css" rel="stylesheet" href="css/lg-zoom.css" />
+    <link type="text/css" rel="stylesheet" href="css/lg-thumbnail.css" />
+
+	<!-- cute alert -->
+	<link rel="stylesheet" href="styles/cuteAlert/style.css">
+	
+	<!-- custom css -->
+	<link rel="stylesheet" href="styles/customStyles.css">
+	
+</head>
+  <body>
+    
+	<div id="menu">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		  <div class="container">
+			<a class="navbar-brand" href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/index.html#">
+			  <img src="img/logo.png">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0" role="tablist">
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/index.html#"><button class="nav-link" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Domov</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/pracovnePostupy/pracovnePostupy.html" ><button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Postupy</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/o%20n%C3%A1s/oNas.html"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">O&nbsp;nás</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/vykonnost/vykonnost.html#"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Výkonnosť</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/galeria/galeria.html"><button class="nav-link active" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Galéria</button></a>
+				  </li>
+				</ul>
+			  <div id="calculator" style="cursor: pointer; color: cornflowerblue; padding-right: 90px;" onclick="calculator();">
+				<i class="bi bi-calculator" style="font-size: 40px; loat: left;"></i>
+				<div id="calculatorIcon" style="float: right; font-size: 12px; font-weight: bold; margin-top: 12px;">VYPOČÍTAJ<br>PROVÍZIU</div>
+			  </div>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	
+	<h2 class="text-center" style="margin-top: 20px;">NAJKRAJŠIE PREDAJE</h2>
+	<section id="gallery">
+	  <div class="container">
+		<!-- Filterable Controls -->
+		<ul class="gallery_tabs">
+		  <li class="active" data-filter="all">Všetko</li>
+		  <li data-filter="puchov">Púchov</li>
+		  <li data-filter="senec">Senec</li>
+		  <li data-filter="trencin">Trenčín</li>
+		</ul>
+		<div class="gallery_wrapper">
+		  <div class="gallery_item puchov">
+			<img src="img/flat1.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item puchov">
+			<img src="img/flat2.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item senec">
+			<img src="img/house1.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item trencin">
+			<img src="img/house2.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item puchov">
+			<img src="img/flat3.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item trencin">
+			<img src="img/flat4.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item senec">
+			<img src="img/flat5.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item trencin">
+			<img src="img/flat6.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item puchov">
+			<img src="img/house3.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item senec">
+			<img src="img/house4.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item trencin">
+			<img src="img/house5.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item senec">
+			<img src="img/house6.jpg" alt="img">
+		  </div>
+		  <div class="gallery_item senec">
+			<img src="img/house7.jpg" alt="img">
+		  </div>
+		</div>
+		<!-- Lightbox -->
+		<div class="lightbox">
+		  <div class="lightbox_wrapper">
+			<div class="lightbox_content">
+			  <img src="" class="lightbox_img" alt="lightbox-img">
+			</div>
+		  </div>
+		  <div class="lightbox_close">
+			<span></span>
+			<span></span>
+		  </div>
+		</div>
+	  </div>
+	</section>
+	
+	
+
+
+
+	<!-- farba loga
+	#1e57ad
+	modrá: #3399ff
+	silnejšia modrá: #176782
+	-->
+	
+	<!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  	
+	<!-- lightgallery  -->
+	<script src="js/lightgallery.umd.js"></script>
+    <!-- lightgallery plugins -->
+    <script src="js/plugins/lg-thumbnail.umd.js"></script>
+    <script src="js/plugins/lg-zoom.umd.js"></script>
+	
+	<!-- cute Alert -->
+	<script src="js/cuteAlert/cute-alert.js"></script>
+	
+	<!-- custom js -->
+	<script src="js/custom/customJs.js"></script>
+  </body>
+</html>

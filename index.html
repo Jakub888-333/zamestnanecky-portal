@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zamestnanecký portál</title>
+	
+	<!-- bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  
+  	<!-- bootstrap icon -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+	
+	<!-- https://fontawesome.com/ icon -->
+	<script src="https://kit.fontawesome.com/881c9fe725.js" crossorigin="anonymous"></script>
+	
+	<!-- cute alert -->
+	<link rel="stylesheet" href="styles/cuteAlert/style.css">
+	
+	<!-- custom css -->
+	<link rel="stylesheet" href="styles/customStyles.css">
+	
+</head>
+  <body>
+    
+	<div id="menu">
+		<nav class="navbar navbar-expand-lg bg-body-tertiary">
+		  <div class="container">
+			<a class="navbar-brand" href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/index.html#">
+			  <img src="img/logo.png">
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+			  <ul class="navbar-nav nav-tabs me-auto mb-2 mb-lg-0" role="tablist">
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/index.html#"><button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">Domov</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/pracovnePostupy/pracovnePostupy.html" ><button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">Postupy</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/o%20n%C3%A1s/oNas.html"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">O&nbsp;nás</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/vykonnost/vykonnost.html#"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Výkonnosť</button></a>
+				  </li>
+				  <li class="nav-item" role="presentation">
+					<a href="file:///C:/Users/jakub/Desktop/zamestnaneck%C3%BD%20port%C3%A1l/galeria/galeria.html"><button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false">Galéria</button></a>
+				  </li>
+				</ul>
+			  <div id="calculator" style="cursor: pointer; color: cornflowerblue; padding-right: 90px;" onclick="calculator();">
+				<i class="bi bi-calculator" style="font-size: 40px; loat: left;"></i>
+				<div id="calculatorIcon" style="float: right; font-size: 12px; font-weight: bold; margin-top: 12px;">VYPOČÍTAJ<br>PROVÍZIU</div>
+			  </div>
+			</div>
+		  </div>
+		</nav>
+	</div>
+	
+	<div id="home">
+		<div class="container">
+			<div id="firstSlider" class="row">
+				<div id="leftPanelFirstSlider" class="col-md-8">
+					<h1 style="float: left">VITAJTE</h1><h2 style="float: right"><i class="bi bi-people" style="font-size: 45px;"></i>   Zamestnanecký portál</h2>
+				</div>
+				<div id="rightPanelFirstSlider" class="col-md-4">
+					Dnes je <script src="https://calendar.zoznam.sk/embed1/sk/en/" type="text/javascript"></script>
+				</div>
+			</div>
+			<div id="mainPanel" class="row">
+				<div id="rightPanel" class="col-md-2">
+					<a href="#">
+						<div class="mainPanelRightBox">
+							<i class="fas fa-umbrella-beach"></i><h6>Požiadaj o neprítomnosť</h6>
+						</div>
+					</a>
+					<a href="#">
+						<div class="mainPanelRightBox">
+							<i class="fa-regular fa-envelope"></i><h6>Pošli email na HR</h6>
+						</div>
+					</a>
+					<a href="#">
+						<div class="mainPanelRightBox">
+							<i class="bi bi-browser-edge" style="margin-top: -10px"></i><h6>Naša webstránka</h6>
+						</div>
+					</a>
+					<a href="#">
+						<div class="mainPanelRightBox">
+							<i class="bi bi-person-workspace" style="margin-top: -10px"></i></i><h6>Môj profil</h6>
+						</div>
+					</a>
+					<a href="#">
+						<div class="mainPanelRightBox">
+							<i class="bi bi-newspaper" style="margin-top: -10px"></i><h6>Čo je nové vo svete?</h6>
+						</div>
+					</a>
+				</div>
+				<div id="mainContent" class="col-md-10">	
+					<!--Malé karty-->
+					<div class="row" id="cards" >
+						<!--Malá karta1-->
+						<div class="col-md-4">
+							<div class="card" style="width: 18rem;" id="cardd1">
+							  <img src="img/news/zmenaVoVedeni.png" class="card-img-top" alt="...">
+							  <div class="card-body">
+								<h5 class="card-title" id="card-titlee1">Zmena vo vedení</h5>
+								<p class="card-text" id="card-textt1">Milí zamestnanci, od 1.10.2023 docháza ku zmene vo vedení spoločnosti. Riaditeľa sekcie Výroby Antona Mrkvu nahradní nový člen nášho tímu Miroslav Karfiol.<br>Antonovi ďakujeme za jeho dlhoročnú spoluprácu,
+									v našej spoločnosti pôsobil od roku 2010, pričom prešiel viacerými pozíciami. Na poslednej pozícii riaditeľ sekcie Výroby pôsobil 3 roky, pričom dosiahol skvelé výsledky. V jeho novej práci mu želáme veľa šťastia. <br>Miroslav má dhoročné skúseností s vedením
+									a výrobou v rôznych spoločnostiach veríme, že bude prinášať mnohé vylepšenia a sekcia bude dosahovať skvelé výsledky.</p>
+								<a href="#" id="buttonShowWholeMessage1" class="btn btn-primary buttonsShowWholeMessage" >Zobraziť celú správu</a>
+							  </div>
+							</div>
+						</div>
+						<!--Malá karta2-->
+						<div class="col-md-4">
+							<div class="card" style="width: 18rem;" id="cardd12">
+							  <img src="img/news/teambuilding.jpg" class="card-img-top" alt="...">
+							  <div class="card-body">
+								<h5 class="card-title" id="card-titlee2">Teambuilding</h5>
+								<p class="card-text" id="card-textt2">Milí kolegovia, dňa 25.9.2023 sa uskutoční Teambuilding. Akcia bude prebiehať v hoteli XY na Liptove, bude trvať dna dni, takže si nezabudnite so sebou zobrať pyžamo &#128516;. Všetko je pripravené, stačí si 
+							so sebou zobrať k pyžamu dobrú náladu &#128513;. Pre tých ktorí budú cestovať spoločnou dopravou, autobusom, prosím aby sa dostavili o 15:00 na parkovicko pred budovou. Pre ostatných platí, aby sa dostavili do hotela medzi o 16:30. Viac informácii nájdete v letáku <a href="img/teambuilding.jpg">TU</a>.
+							Tešíme sa na Vás.</p>
+								<a href="#" id="buttonShowWholeMessage2" class="btn btn-primary buttonsShowWholeMessage" >Zobraziť celú správu</a>
+							  </div>
+							</div>
+						</div>
+						<!--Malá karta3-->
+						<div class="col-md-4">
+							<div class="card" style="width: 18rem;" id="cardd3">
+							  <img src="img/news/zbierkaPreNadaciu.jpg" class="card-img-top" alt="...">
+							  <div class="card-body">
+								<h5 class="card-title" id="card-titlee3">Zbierka pre nadáciu</h5>
+								<p class="card-text" id="card-textt3">Milí kolegovia, na základe Vášho podnetu budeme organizovať zbierku pre nadáciu Pomôž ak môžeš. Nadácia na zaoberá materiálnou, finančncou a duševnou pomocou pre deti z domomov, teda pre deti ktoré nevyrastali vo svojich rodinách.
+							Predmetom zbierky budú: oblčenie dievčenské a chlapčenské pre vek 10 - 15 rokov, školské potreby ako pero, peračník, školská taška, zakladač, zošity, športové potreby ako lopta akákoľvek, rakety tenisové, stolnotenisové, bedmintonové.. Oblečenie nové, nepoužité.
+							Takisto bude prebiehať aj finančná zbierka, prosím kto by chcel prispieť finančne, môže tak urobiť na číslo účtu 000000, ide o transparentný účet ktorý je možné zobraziť na webe. Ďakujeme za každý príspevok, veľmi si to vážime. Zbierka potrvá do 20.05.2024.</p>
+								<a href="#" id="buttonShowWholeMessage3" class="btn btn-primary buttonsShowWholeMessage" >Zobraziť celú správu</a>
+							  </div>
+							</div>
+						</div>	
+					</div>
+					<!--Veľké karty-->
+					<div id="fullards">
+						<!--Veľká karta1-->
+						<div id="fullMessage1" class="fullMessages">
+							<h5 id="card-titleeFullMessage1">Zmena vo vedení</h5>
+								<p id="card-texttFullMessage1">Milí zamestnanci, od 1.10.2023 docháza ku zmene vo vedení spoločnosti. Riaditeľa sekcie Výroby Antona Mrkvu nahradní nový člen nášho tímu Miroslav Karfiol.<br>Antonovi ďakujeme za jeho dlhoročnú spoluprácu,
+									v našej spoločnosti pôsobil od roku 2010, pričom prešiel viacerými pozíciami. Na poslednej pozícii riaditeľ sekcie Výroby pôsobil 3 roky, pričom dosiahol skvelé výsledky. V jeho novej práci mu želáme veľa šťastia. <br>Miroslav má dhoročné skúseností s vedením
+									a výrobou v rôznych spoločnostiach veríme, že bude prinášať mnohé vylepšenia a sekcia bude dosahovať skvelé výsledky.</p>
+								<a href="#" id="buttonShowWholeMessage1FullMessage1" class="btn btn-primary buttonsShowWholeMessage" >Návrat</a>
+						</div>
+						<!--Veľká karta2-->
+						<div id="fullMessage2" class="fullMessages">
+							<h5 id="card-titleeFullMessage2">Teambuilding</h5>
+								<p id="card-texttFullMessage2">Milí kolegovia, dňa 25.9.2023 sa uskutoční Teambuilding. Akcia bude prebiehať v hoteli XY na Liptove, bude trvať dna dni, takže si nezabudnite so sebou zobrať pyžamo &#128516;. Všetko je pripravené, stačí si 
+							so sebou zobrať k pyžamu dobrú náladu &#128513;. Pre tých ktorí budú cestovať spoločnou dopravou, autobusom, prosím aby sa dostavili o 15:00 na parkovicko pred budovou. Pre ostatných platí, aby sa dostavili do hotela medzi o 16:30. Viac informácii nájdete v letáku <a href="img/teambuilding.jpg">TU</a>.
+							Tešíme sa na Vás.</p>
+								<a href="#" id="buttonShowWholeMessage1FullMessage2" class="btn btn-primary buttonsShowWholeMessage" >Návrat</a>
+						</div>
+						<!--Veľká karta3-->
+						<div id="fullMessage3" class="fullMessages">
+							<h5 id="card-titleeFullMessage3">Zbierka pre nadáciu</h5>
+								<p id="card-texttFullMessage3">Milí kolegovia, na základe Vášho podnetu budeme organizovať zbierku pre nadáciu Pomôž ak môžeš. Nadácia na zaoberá materiálnou, finančncou a duševnou pomocou pre deti z domomov, teda pre deti ktoré nevyrastali vo svojich rodinách.
+							Predmetom zbierky budú: oblčenie dievčenské a chlapčenské pre vek 10 - 15 rokov, školské potreby ako pero, peračník, školská taška, zakladač, zošity, športové potreby ako lopta akákoľvek, rakety tenisové, stolnotenisové, bedmintonové.. Oblečenie nové, nepoužité.
+							Takisto bude prebiehať aj finančná zbierka, prosím kto by chcel prispieť finančne, môže tak urobiť na číslo účtu 000000, ide o transparentný účet ktorý je možné zobraziť na webe. Ďakujeme za každý príspevok, veľmi si to vážime. Zbierka potrvá do 20.05.2024.</p>
+								<a href="#" id="buttonShowWholeMessage1FullMessage3" class="btn btn-primary buttonsShowWholeMessage" >Návrat</a>
+						</div>
+					</div>	
+				</div>
+			</div>
+		</div>
+	</div>
+	
+	<!-- farba loga
+	#1e57ad
+	modrá: #3399ff
+	silnejšia modrá: #176782
+	-->
+	
+	<!-- bootstrap js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+	<!-- cute Alert -->
+	<script src="js/cuteAlert/cute-alert.js"></script>
+	
+	<!-- custom js -->
+	<script src="js/custom/customJs.js"></script>
+  </body>
+</html>
